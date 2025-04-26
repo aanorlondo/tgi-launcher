@@ -1,0 +1,4 @@
+torch
+openai
+huggingface-hub 
+gradio

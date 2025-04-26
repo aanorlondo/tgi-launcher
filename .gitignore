@@ -1,0 +1,16 @@
+.venv
+.gradio
+pycache
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info
+*.egg
+*.whl
+*.tar.gz
+*.zip
+*.log
+data
+versions

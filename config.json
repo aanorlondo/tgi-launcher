@@ -1,0 +1,31 @@
+{
+    "server": {
+        "models": [
+            "teknium/OpenHermes-2.5-Mistral-7B",
+            "Tom158/Llama3_8B-Inst_NutritionAI",
+            "HuggingFaceH4/zephyr-7b-beta"
+        ],
+        "port": 8080,
+        "container_image": "ghcr.io/huggingface/text-generation-inference:3.2.3",
+        "container_name": "tgi_server"
+    },
+    "client": {
+        "title": "Text Generation Inference (TGI) - Local Server 🤝",
+        "hardware": "Powered with: NVIDIA GeForce RTX 5070 Ti",
+        "model": "Running model: <a href='https://huggingface.co/__MODEL_NAME_PLACEHOLDER__' style='color: orange; text-decoration: none;'>__MODEL_NAME_PLACEHOLDER__</a>",
+        "max_tokens": 4096,
+        "system_prompt": "You are a helpful assistant. Answer the questions to the best of your ability.",
+        "examples": [
+            "Are tomatoes a fruit or a vegetable?",
+            "What is the difference between an acid and a base?",
+            "What is the function of the kidneys?",
+            "What is the process of digestion?",
+            "What is the difference between a conductor and an insulator?",
+            "What is the function of the brain?",
+            "What is the process of photosynthesis?",
+            "What is the difference between a plant and an animal cell?",
+            "What is the function of the lungs?",
+            "What is the process of fermentation?"
+        ]
+    }
+}
