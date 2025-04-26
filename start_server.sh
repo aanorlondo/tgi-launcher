@@ -97,6 +97,8 @@ echo "Volume: '$volume'"
 echo ""
 echo "--- Starting TGI server..."
 docker run --gpus all --shm-size 64g -p $server_port:80 -v $volume:/data \
+    --net host \
+    -e HF_HUB_ENABLE_HF_TRANSFER="false" \
     --name $container_name \
     $container_image \
     --model-id $model
